@@ -1,35 +1,35 @@
-# sized-chunks
+# sp-sized-chunks
 
-Various fixed length array data types, designed for [immutable.rs].
+Fixed length array library for `no_std` `sp-im` use within Substrate
 
-## Overview
+## License
 
-This crate provides the core building blocks for the immutable data structures
-in [immutable.rs]: a sized array with O(1) amortised double ended push/pop and
-smarter insert/remove performance (used by `im::Vector` and `im::OrdMap`), and a
-fixed size sparse array (used by `im::HashMap`).
+```
+Copyright © 2021 Yatima Inc
 
-In a nutshell, this crate contains the unsafe bits from [immutable.rs], which
-may or may not be useful to anyone else, and have been split out for ease of
-auditing.
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the “Software”), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
 
-## Documentation
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* [API docs](https://docs.rs/sized-chunks)
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
-## Licence
-
-Copyright 2019 Bodil Stokke
-
-This software is subject to the terms of the Mozilla Public
-License, v. 2.0. If a copy of the MPL was not distributed with this
-file, You can obtain one at http://mozilla.org/MPL/2.0/.
+This project was forked from https://github.com/bodil/sized-chunks
+(Copyright 2019 Bodil Stokke) and contains code which is subject to the terms of the MIT License.
 
 ## Code of Conduct
 
-Please note that this project is released with a [Contributor Code of
-Conduct][coc]. By participating in this project you agree to abide by its
+This project is released with a [Contributor Code of
+Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its
 terms.
-
-[immutable.rs]: https://immutable.rs/
-[coc]: https://github.com/bodil/sized-chunks/blob/master/CODE_OF_CONDUCT.md
