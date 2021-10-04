@@ -1,17 +1,16 @@
 [package]
-name = "sized-chunks"
-version = "0.6.5"
-authors = ["Bodil Stokke <bodil@bodil.org>"]
+name = "sp-sized-chunks"
+version = "0.1.0"
 edition = "2018"
-license = "MPL-2.0+"
-description = "Efficient sized chunk datatypes"
-repository = "https://github.com/bodil/sized-chunks"
-documentation = "http://docs.rs/sized-chunks"
-readme = "./README.md"
-categories = ["data-structures"]
-keywords = ["sparse-array"]
+authors = ["Samuel Burnham <sam@yatima.io>", "John Burnham <john@yatima.io>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yatima-inc/sp-sized-chunks"
+documentation = "https://docs.rs/sp-sized-chunks"
+description = "Fixed length array types for no_std` use within Substrate"
+keywords = ["chunks", "no_std"]
+categories = ["no-std"]
 exclude = ["release.toml", "proptest-regressions/**"]
-
 [package.metadata.docs.rs]
 all-features = true
 
